@@ -1,0 +1,11 @@
+Kansas,1
+Maryland,5
+----
+Villanova,2
+Miami,3
+----
+UNC,1
+Indiana,5
+----
+Notre Dame,6
+Wisconsin,7
