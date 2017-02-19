@@ -19,8 +19,14 @@ class ParentNeuron:
     def activate(self):
         pass
 
-    def feedForward(self):
-        pass
+    def feedForward(self, inArray):
+        total = 0
+
+        for(idx, val) in enumerate( inArray ):
+            total += (val * self.weights[idx] )
+
+        return self.activate(total)
+
 
     def train(self):
         pass
