@@ -7,11 +7,11 @@ Author: Rachael Thormann
 
 class ParentNeuron:
 
-    def __init__(self):
+    def __init__(self, size):
         pass
 
     def __str__(self):
-        pass
+        return str(self.weights)
 
     def activate(self):
         pass
