@@ -5,6 +5,7 @@ Author: Philip Bedward
 Author: Rachael Thormann
 """
 import random
+import math
 
 class ParentNeuron:
 
@@ -16,8 +17,8 @@ class ParentNeuron:
     def __str__(self):
         return str(self.weights)
 
-    def activate(self):
-        pass
+    def activate(self,value):
+        return ( 1/ ( 1 + math.e**(value) ) )
 
     def feedForward(self):
         pass
