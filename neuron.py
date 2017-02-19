@@ -28,6 +28,9 @@ class ParentNeuron:
 
         return self.activate(total)
 
+    def train(self, inArray, desired):
+        output = self.feedForward( inArray )
+        error = desired - output
 
-    def train(self):
-        pass
+        for i in range(len(self.weights)):
+            self.weights[i] += (error * inArray[i] )
